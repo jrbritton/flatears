@@ -151,7 +151,7 @@
 }
 
 .photo {
-    height: 100px;
+    height: 120px;
 }
 
 .photo-text {
@@ -159,4 +159,28 @@
     justify-content: center;
     font-family: 'Nunito', sans-serif;
     color: #112A46;
+}
+
+/* Mobile devices */
+
+@media (min-width: 319px) and (max-width: 480px) { .gallery-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 1100px;
+    }
+
+    .photo {
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .photo-text {
+        display: flex;
+        justify-content: center;
+        font-family: 'Nunito', sans-serif;
+        color: #112A46;
+    }
 }
